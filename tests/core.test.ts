@@ -1,22 +1,7 @@
 import { describe, it, expect } from "vitest";
-import { RegulationTracker } from "../src/regulationTracker.js";
-
-describe("RegulationTracker", () => {
-  it("initializes", () => {
-    const instance = new RegulationTracker();
-    expect(instance.getStats().totalOps).toBe(0);
-  });
-
-  it("tracks operations", async () => {
-    const instance = new RegulationTracker();
-    await instance.scansources();
-    expect(instance.getStats().totalOps).toBe(1);
-  });
-
-  it("resets state", async () => {
-    const instance = new RegulationTracker();
-    await instance.scansources();
-    instance.reset();
-    expect(instance.getStats().totalOps).toBe(0);
-  });
+import { AiRegulationTracker } from "../src/core.js";
+describe("AiRegulationTracker", () => {
+  it("init", () => { expect(new AiRegulationTracker().getStats().ops).toBe(0); });
+  it("op", async () => { const c = new AiRegulationTracker(); await c.analyze(); expect(c.getStats().ops).toBe(1); });
+  it("reset", async () => { const c = new AiRegulationTracker(); await c.analyze(); c.reset(); expect(c.getStats().ops).toBe(0); });
 });
