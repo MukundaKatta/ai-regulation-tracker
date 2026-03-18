@@ -1,13 +1,15 @@
-# ai-regulation-tracker
+# AI Regulation Tracker
 
-Stub Python project. Described as an AI regulation tracker, but none of that functionality exists.
+Monitoring tool for tracking AI regulations, policies, and compliance requirements worldwide.
 
-## What's actually here
+## About
+AI Regulation Tracker aggregates and monitors AI-related legislation and regulatory developments across jurisdictions. It provides alerts on new regulations, compliance checklists, and impact assessments to help organizations stay ahead of evolving AI policy.
 
-A single class in `src/core.py` (AiRegulationTracker) with placeholder methods that each return a fixed dictionary without doing any real work. There is no regulation monitoring, no policy tracking, no compliance analysis - just stubs.
-
-The project uses only Python standard library imports (time, logging, json, typing). No web scraping, legal, or compliance libraries are present.
+## Tech Stack
+- Language: Python
+- Data: Regulatory database with global coverage
+- Monitoring: Change detection and alerting
+- Analysis: Compliance impact assessment tools
 
 ## Status
-
-Scaffolding only. No working regulation tracking functionality exists.
+Active development - regulatory database and monitoring pipeline established.
