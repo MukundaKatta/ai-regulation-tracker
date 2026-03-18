@@ -1,30 +1,64 @@
-# ai-regulation-tracker
+# Ai Regulation Tracker
 
-**Track AI regulations across jurisdictions**
+Track AI regulations across jurisdictions
 
-## Install
+## Features
+
+- Alerts.ts
+Analyzer.ts
+Api.ts
+Database.ts
+Index.ts
+Scraper.ts
+Timeline.ts
+Tracker.ts
+
+## Tech Stack
+
+- **Language:** TypeScript
+- **Framework:** Next.js
+- **Key Dependencies:** dependencies,^12.0.0,^3.23.0,^4.75.0,devDependencies,^5.7.0,^4.19.0,^2.0.0
+- **Containerization:** Docker + Docker Compose
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- Docker & Docker Compose (optional)
+
+### Installation
+
 ```bash
+git clone https://github.com/MukundaKatta/ai-regulation-tracker.git
+cd ai-regulation-tracker
 npm install
 ```
 
-## Quick Start
-```typescript
-import { VERSION } from "./src/index.js";
+### Running
+
+```bash
+npm run dev
 ```
 
-## Modules
-- **tracker**
-- **scraper**
-- **analyzer**
-- **database**
-- **alerts**
-- **timeline**
-- **api**
+### Docker
 
-## Docker
 ```bash
-docker compose up
+docker-compose up
+```
+
+## Project Structure
+
+```
+ai-regulation-tracker/
+├── src/           # Source code
+├── tests/         # Test suite
+├── Dockerfile
+├── docker-compose.yml
+├── package.json
+└── README.md
 ```
 
 ## License
-(c) 2026 Officethree Technologies. All Rights Reserved.
+
+MIT
