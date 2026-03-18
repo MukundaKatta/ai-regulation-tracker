@@ -1,64 +1,41 @@
-# Ai Regulation Tracker
+# ai-regulation-tracker
 
-Track AI regulations across jurisdictions
+**Track and analyze AI regulations across jurisdictions worldwide**
 
-## Features
+![Build](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-proprietary-red)
 
-- Alerts.ts
-Analyzer.ts
-Api.ts
-Database.ts
-Index.ts
-Scraper.ts
-Timeline.ts
-Tracker.ts
-
-## Tech Stack
-
-- **Language:** TypeScript
-- **Framework:** Next.js
-- **Key Dependencies:** dependencies,^12.0.0,^3.23.0,^4.75.0,devDependencies,^5.7.0,^4.19.0,^2.0.0
-- **Containerization:** Docker + Docker Compose
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js 18+
-- Docker & Docker Compose (optional)
-
-### Installation
-
+## Install
 ```bash
-git clone https://github.com/MukundaKatta/ai-regulation-tracker.git
-cd ai-regulation-tracker
 npm install
 ```
 
-### Running
+## Quick Start
+```typescript
+import { AiRegulationTracker } from "./ai-regulation-tracker";
+const instance = new AiRegulationTracker()
+const r = await instance.analyze({ input: 'test' })
+```
 
+## CLI
 ```bash
-npm run dev
+npx tsx src/cli.ts status
+npx tsx src/cli.ts run --input "data"
 ```
 
-### Docker
+## API
+| Method | Description |
+|--------|-------------|
+| `analyze()` | Analyze |
+| `evaluate()` | Evaluate |
+| `score()` | Score |
+| `compare()` | Compare |
+| `get_insights()` | Get insights |
+| `generate_report()` | Generate report |
 
+## Test
 ```bash
-docker-compose up
-```
-
-## Project Structure
-
-```
-ai-regulation-tracker/
-├── src/           # Source code
-├── tests/         # Test suite
-├── Dockerfile
-├── docker-compose.yml
-├── package.json
-└── README.md
+npx vitest
 ```
 
 ## License
-
-MIT
+(c) 2026 Officethree Technologies. All Rights Reserved.
