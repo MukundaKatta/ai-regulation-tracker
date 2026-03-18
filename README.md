@@ -1,39 +1,13 @@
 # ai-regulation-tracker
 
-**Track and analyze AI regulations across jurisdictions worldwide**
+Stub Python project. Described as an AI regulation tracker, but none of that functionality exists.
 
-![Build](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-proprietary-red)
+## What's actually here
 
-## Install
-```bash
-npm install
-```
+A single class in `src/core.py` (AiRegulationTracker) with placeholder methods that each return a fixed dictionary without doing any real work. There is no regulation monitoring, no policy tracking, no compliance analysis - just stubs.
 
-## Quick Start
-```typescript
-import { AiRegulationTracker } from "./ai-regulation-tracker";
-const instance = new AiRegulationTracker()
-const r = await instance.analyze({ input: 'test' })
-```
+The project uses only Python standard library imports (time, logging, json, typing). No web scraping, legal, or compliance libraries are present.
 
-## CLI
-```bash
-npx tsx src/cli.ts status
-npx tsx src/cli.ts run --input "data"
-```
+## Status
 
-## API
-| Method | Description |
-|--------|-------------|
-| `analyze()` | Analyze |
-| `evaluate()` | Evaluate |
-| `score()` | Score |
-| `compare()` | Compare |
-| `get_insights()` | Get insights |
-| `generate_report()` | Generate report |
-
-## Test
-```bash
-npx vitest
-```
-
+Scaffolding only. No working regulation tracking functionality exists.
